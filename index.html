@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newton-Gregory Interpolation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Newton-Gregory Interpolation</h1>
+        <div>
+            <label for="xValues">X Values (comma-separated):</label>
+            <input type="text" id="xValues" placeholder="0,1,2,3,4">
+        </div>
+        <div>
+            <label for="yValues">Y Values (comma-separated):</label>
+            <input type="text" id="yValues" placeholder="5,6,7,8,9">
+        </div>
+        <div>
+            <label for="interpolationValue">Interpolation Value:</label>
+            <input type="text" id="interpolationValue" placeholder="Enter interpolation value">
+        </div>
+        <button id="calculateNG">Calculate Newton-Gregory Forward</button>
+        <button id="calculateNGB">Calculate Newton-Gregory Backward</button>
+        <button id="calculateLR">Calculate Linear Regression</button>
+        <div id="resultNG"></div>
+        <div id="resultNGB"></div>
+        <div id="resultLR"></div>
+        <div id="tableNG"></div>
+        <div id="tableNGB"></div>
+        <canvas id="chartNG" width="600" height="400"></canvas>
+        <canvas id="chartNGB" width="600" height="400"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
